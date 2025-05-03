@@ -1,0 +1,12 @@
+{
+	"name": "SQLToADLSLinkedService",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://olistdatastorage2.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEJFRUM5MjAxLUQ5OUUtNDcyOS1COUMzLTAzMTk3RjM1N0Y3OV9hMDk5NThmMS0zMzk3LTQ3YTItOWE1YS00Njc3MTIxZTc1MzIiDQp9"
+		}
+	}
+}

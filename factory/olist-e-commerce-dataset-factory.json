@@ -1,0 +1,9 @@
+{
+	"name": "olist-e-commerce-dataset-factory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4f24a445-db0d-4336-a7a5-6196fcc70e3b",
+		"tenantId": "c4276580-96af-40d7-9b13-3f59b507b966"
+	}
+}
