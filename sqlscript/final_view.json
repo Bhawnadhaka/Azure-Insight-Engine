@@ -1,0 +1,17 @@
+{
+	"name": "final_view",
+	"properties": {
+		"content": {
+			"query": "create view gold.final2\nas \nSelect \n    top 100 *\nFROM\n    openrowset(\n        bulk'https://olistdatastorage2.dfs.core.windows.net/olistcontainer/silver/',\n        format='parquet'\n    ) as result2 \nwhere order_status ='delivered'\n\nselect * from gold.final2",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "olist_database",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

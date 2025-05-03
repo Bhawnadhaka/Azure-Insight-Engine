@@ -1,0 +1,17 @@
+{
+	"name": "SQL_olist_workspace_script",
+	"properties": {
+		"content": {
+			"query": "\nSelect \n    top 100 *\nFROM\n    openrowset(\n        bulk'https://olistdatastorage2.dfs.core.windows.net/olistcontainer/silver/',\n        format='parquet'\n    ) as result1 \n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "olist_database",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
